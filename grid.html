@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        min-height: 300vh;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      main {
+        display: grid;
+        background-color: #aaa;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-template-rows: 150px 300px;
+        gap: 20px;
+      }
+
+      .green {
+        /* width: 300px; */
+        /* height: 100px; */
+        border: 10px solid #000;
+        background-color: #00a000;
+      }
+
+      .red {
+        /* width: 300px; */
+        /* height: 120px; */
+        border: 2px solid pink;
+        background-color: #a00000;
+        grid-column: 2 / 4;
+        grid-column: 2 / span 2;
+      }
+
+      .blue {
+        /* width: 300px; */
+        /* height: 150px; */
+        background-color: #0000a0;
+      }
+
+      .white {
+        width: 50px;
+        height: 50px;
+        background-color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="green">사이드바</div>
+      <div class="red">메인콘텐츠</div>
+      <div class="blue">콘텐츠2</div>
+      <div class="green">사이드바</div>
+      <!-- <div class="red"></div> -->
+      <div class="green">사이드바</div>
+    </main>
+  </body>
+</html>

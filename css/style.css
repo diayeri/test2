@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Moirai+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  font-size: 14px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  padding: 20px;
+  margin: 30px;
+}
+
+/* a {
+  color: blue;
+}
+
+a:hover {
+  color: pink;
+} */
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+table {
+  opacity: 1;
+  font-size: 20px;
+}
+
+tr {
+  /* 20 * 0.5 = 10 */
+  font-size: 0.5em;
+}
+
+td {
+  /* 10 * 0.5 = 5 */
+  font-size: 0.5em;
+}
+
+.dy-table {
+}
+
+.table-pro {
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  color: #333;
+
+  /* 1. 폰트 설정 (후보 지정 + 최종 기본 글꼴 sans-serif) */
+  font-family:
+    "Pretendard",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+
+  /* 2. 글자 크기 지정 */
+  font-size: 16px;
+
+  /* 3. 글자 굵기 지정 (600은 세미 볼드 정도의 굵기) */
+  font-weight: 600;
+
+  /* 4. 줄 간격 지정 (글자 크기의 1.6배로 설정) */
+  line-height: 1.6;
+}
+
+.moirai-one-regular {
+  font-family: "Moirai One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tourney-normal {
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.tourney-bold {
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+img {
+  width: 200px;
+  height: 400px;
+}
+
+img {
+  width: 400px;
+}
+
+/* ".클래스이름" = 해당 클래스 이름을 가진 태그를 스타일링 */
+.greeting {
+  color: blue;
+}
+
+.container .greeting {
+  color: red;
+}
+
+.icon {
+  width: 24px; /* 원하는 크기 지정 */
+  height: 24px;
+  fill: currentColor; /* 부모 텍스트 색상을 그대로 상속받음 */
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+}

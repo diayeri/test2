@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h1>로그인</h1>
+
+      <fieldset>
+        <legend>Choose your monster's features:</legend>
+
+        <input type="checkbox" id="scales" name="scales" />
+        <label for="scales">Scales</label>
+
+        <input type="checkbox" id="horns" name="horns" />
+        <label for="horns">Horns</label>
+
+        <input type="checkbox" id="new" name="new option" />
+        <label for="new">새로운 옵션</label>
+      </fieldset>
+
+      <div>
+        <legend>Do you agree to the terms?</legend>
+        <label
+          ><input type="radio" name="질문1" value="yes" checked /> Yes</label
+        >
+        <label><input type="radio" name="질문1" value="no" /> No</label>
+        <label
+          ><input type="radio" name="질문1" value="모르겠음" /> 모르겠음</label
+        >
+      </div>
+
+      <div>
+        <label for="user">아이디</label>
+        <input id="user" name="username" />
+      </div>
+      <div>
+        <label for="password">비밀번호</label>
+        <input id="password" name="password" type="password" />
+      </div>
+      <div>
+        <label for="date">생년월일</label>
+        <input id="date" name="date" type="date" />
+      </div>
+
+      <div>
+        <label for="file">파일</label>
+        <input id="file" name="file" type="file" />
+      </div>
+
+      <div>
+        <label for="number">주문수량</label>
+        <input id="number" name="number" type="number" />
+      </div>
+
+      <button type="submit">로그인</button>
+      <button>로그인</button>
+
+      <button type="reset">초기화</button>
+      <button type="button">취소</button>
+    </form>
+  </body>
+</html>

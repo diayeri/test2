@@ -1,0 +1,264 @@
+/* 공통 */
+
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+body {
+  font-family: "Jua", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+
+  background-color: rgb(255, 255, 160);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+label {
+  color: cornflowerblue;
+}
+
+p {
+  color: cornflowerblue;
+  font-weight: 500;
+}
+
+/* 사진보기 페이지 */
+.mainimg {
+  width: 500px;
+  height: auto;
+}
+
+.imgbox {
+  width: 500px;
+  margin-top: 5px;
+}
+
+.imgbox img {
+  width: calc((100% - 10px) / 3);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* 메인 ㅍㅔ이지 */
+img {
+  border-radius: 50px;
+}
+
+.main-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.main-btn {
+  text-decoration: none;
+  color: rgb(237, 243, 237);
+  background-color: palevioletred;
+  padding: 14px 30px;
+  font-weight: 500;
+  border-radius: 30px;
+}
+
+.main-btn:hover {
+  color: rgb(253, 253, 253);
+  background-color: rgb(205, 91, 129);
+}
+
+footer {
+  width: 639px;
+  box-sizing: border-box;
+  background-color: #ffffdd;
+  padding: 35px 20px 20px;
+  margin-top: 80px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+/* 만든사람, 사진제공 */
+.footer-info {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+/* 아래 정보 */
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 아이콘 + 제목 */
+.footer-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-title svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-title strong {
+  font-size: 15px;
+  color: #333;
+}
+
+/* 이름 및 출처 */
+.footer-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* 저작권 */
+.copyright {
+  margin: 30px 0 0;
+  padding-top: 15px;
+  border-top: 1px solid #ddddbb;
+  font-size: 12px;
+  color: #777;
+}
+
+/* 대답해줘 페이지*/
+label {
+  display: block;
+  padding: 20px 0;
+  font-weight: 600;
+}
+
+article input,
+article select {
+  box-sizing: border-box;
+  width: 320px;
+  height: 52px;
+  padding: 14px 18px;
+
+  border: 2px solid #ffd1df;
+  border-radius: 20px;
+  background-color: #fff5f8;
+
+  font-size: 16px;
+  color: #555;
+}
+
+article input:focus,
+article select:focus {
+  outline: none;
+  border-color: #ff8fb3;
+  box-shadow: 0 0 0 4px #ffe3ed;
+}
+
+.save-btn {
+  text-decoration: none;
+  margin-top: 24px;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ff8fb3;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 4px 0 #e97599;
+}
+
+.save-btn:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+/* 친구 소개 페이지 */
+/* 상단 메뉴 */
+.description-page header {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.description-page nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.description-page nav a {
+  text-decoration: none;
+  color: #8a7d81;
+  font-size: 18px;
+}
+
+.description-page nav a:hover {
+  color: rgb(2, 2, 2);
+}
+
+/* 소개 영역 */
+.description-page section {
+  width: 100%;
+  max-width: 1100px;
+  box-sizing: border-box;
+  padding: 60px 20px;
+}
+
+.description-page h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.description-page section > p {
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+.bear-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* 개별 곰돌이 카드 */
+.bear-card {
+  flex: 1;
+  background-color: #fffdf0;
+  border: 3px solid #f5c6d6;
+  border-radius: 20px;
+
+  padding: 35px 20px;
+
+  box-shadow: 5px 5px 0 #e8a7bc;
+  transition: transform 0.2s;
+}
+
+.bear-card:hover {
+  transform: translateY(-6px);
+}
+
+/* 카드 제목 */
+.bear-card h2 {
+  font-size: 25px;
+  color: #d96d95;
+  margin-bottom: 20px;
+}
+
+/* 카드 설명 */
+.bear-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+}
